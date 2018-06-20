@@ -1,0 +1,15 @@
+service: WeatherService
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+  environment: ${file(env.yml):${opt:stage, 'test'}}
+functions:
+  getWeather:
+    handler: function.getWeather
+    events:
+      - http:
+          path: weather
+          method: get
+          cors: true
+          integration: LAMBDA
