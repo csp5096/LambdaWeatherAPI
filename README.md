@@ -8,8 +8,7 @@ city and country, using the OpenWeatherMap API as the Base URL.
 - Base URL: https://fghdz5u6jh.execute-api.us-east-1.amazonaws.com/prod/weather
 - Query URL Format: https://fghdz5u6jh.execute-api.us-east-1.amazonaws.com/prod/weather?city={city}&country_code={country_code} 
 - Query URL Example (Austin,Texas,USA): https://fghdz5u6jh.execute-api.us-east-1.amazonaws.com/prod/weather?city=Austin&country_code=US
-Query Reference:
-https://openweathermap.org/current#name
+- Query Reference: https://openweathermap.org/current#name
 
 ### Design
 
